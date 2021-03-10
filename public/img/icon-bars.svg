@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="25.081" viewBox="0 0 26 25.081">
+    <g id="Groupe_904" data-name="Groupe 904" transform="translate(179.16 -29)">
+        <g id="Groupe_857" data-name="Groupe 857" transform="translate(-134.072 21)">
+            <line id="Ligne_3358" data-name="Ligne 3358" x2="22.525" transform="translate(-43.807 8.5)" fill="none" stroke="#253d8c" stroke-linecap="round" stroke-width="1"/>
+            <line id="Ligne_3359" data-name="Ligne 3359" x2="22.525" transform="translate(-43.807 13.5)" fill="none" stroke="#253d8c" stroke-linecap="round" stroke-width="1"/>
+            <line id="Ligne_3360" data-name="Ligne 3360" x2="22.525" transform="translate(-43.807 18.5)" fill="none" stroke="#253d8c" stroke-linecap="round" stroke-width="1"/>
+        </g>
+        <text id="MENU" transform="translate(-179.16 51.081)" fill="#253d8c" font-size="9" font-family="ProximaNova-Regular, Proxima Nova"><tspan x="0" y="0">MENU</tspan></text>
+    </g>
+</svg>

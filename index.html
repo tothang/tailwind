@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="public/build/tailwind.css">
+    <link rel="stylesheet" href="public/css/base.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="public/home.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body class="text-blue-100 font-serif antialiased leading-1">
+<header class="hidden lg:block w-full bg-white z-40 font-montserrat" id="menu-desktop">
+    <div class="hidden content-search-bar absolute top-0 fixed w-full py-2 bg-white border-red-50 border-2 border-solid z-40 flex">
+        <span class="px-10 py-10">
+            <img class="w-5" src="public/img/icon-search-nomad.png">
+        </span>
+        <input type="text" class="search-input leading-50 w-full rounded-none border-blue-100 hover:border-default">
+    </div>
+    <div class="block top-menu">
+        <div class="px-12 py-1 flex justify-between bg-gray-850 text-xs font-light">
+            <h1>3 SUISSES, une marque mode et déco française engagée !</h1>
+            <a target="_blank" href="/page/retour.html">Retours gratuits *</a>
+        </div>
+    </div>
+    <div class="py-4 px-12 relative">
+        <div class="flex justify-center">
+            <div class="flex text-center ml-6 absolute py-2 left-0 top-0 mt-8 border-b-default border-solid border-red-100">
+                <img class="w-5 mr-2" src="public/img/syte-photo.svg">
+                <span class="text-xs mr-2 search-bar-menu">
+                        Rechercher une marque, un article, une référence
+                    </span>
+                <img class="w-5" src="public/img/icon-search-nomad.png">
+            </div>
+            <img class="h-16" src="public/img/logo3s.svg">
+            <ul class=" flex absolute top-2 right-0 px-12 list-none text-xs list-icon-menu">
+                <li class="mr-4">
+                    <p>
+                            <span class="block text-center">
+                                <a href="#" class="block py-1 h-10 flex justify-center">
+                                    <img class="w-5" src="public/img/icone-catalogue.svg">
+                                </a>
+                                <span>Catalogue</span>
+                            </span>
+                    </p>
+                </li>
+                <li class="mr-4">
+                    <p>
+                            <span class="block text-center">
+                                <a href="#" class="block py-1 h-10 flex justify-center">
+                                    <img class="w-5" src="public/img/icon-tel.svg">
+                                </a>
+                                <span>0892 691 500**</span>
+                            </span>
+                    </p>
+                </li>
+                <li class="mr-4">
+                    <p>
+                            <span class="block text-center relative">
+                                <a href="#" class="block py-1 h-10 flex justify-center">
+                                    <img class="w-5" src="public/img/icon-heart.svg">
+                                </a>
+                                <span class="absolute w-6 top-0 right-0 bg-gray-950 text-red-200 rounded-md">0</span>
+                                <span>Wishlist</span>
+                            </span>
+                    </p>
+                </li>
+                <li class="mr-4">
+                    <p>
+                            <span class="block text-center">
+                                <a href="#" class="block py-1 h-10 flex justify-center">
+                                    <img class="w-5" src="public/img/icon-user.svg">
+                                </a>
+                                <span>Mon compte</span>
+                            </span>
+                    </p>
+                </li>
+                <li class="mr-4">
+                    <p>
+                            <span class="block text-center">
+                                <a href="#" class="block py-1 h-10 flex justify-center">
+                                    <img class="w-5" src="public/img/icon-cart.svg">
+                                </a>
+                                <span>Panier</span>
+                            </span>
+                    </p>
+                </li>
+            </ul>
+            <div class="z-40 hidden popup-login absolute top-50 right-1/10 w-300 bg-white px-3 py-4 shadow-xl font-bold font-montserrat text-blue-100">
+                <button class="flex justify-center hover:bg-blue-100 hover:text-white font-bold font-montserrat text-blue-100 btn-login text-xs w-full border-solid w-full border-blue-100 py-2 border-1">
+                    <img class="w-3 mr-1" src="public/img/forward-right-arrow-button.svg">
+                    <span>CONNEXION</span>
+                </button>
+                <button class="flex justify-center hover:bg-blue-100 hover:text-white mt-4 font-bold font-montserrat text-blue-100 text-xs btn-login w-full border-solid w-full border-blue-100 py-2 border-1">
+                    <img class="w-3 mr-1" src="public/img/user.svg">
+                    <span>CREDITON DE COMPLTE</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center border-blue-200 border-solid border-t-default border-b-default">
+        <ul class="flex text-sm font-black">
+            <li class="py-2 px-2 mr-4 text-red-200 hover:bg-blue-100 hover:text-white">
+                <a href="#">NOUVEAUTES</a>
+            </li>
+            <li class="py-2 item-menu px-2 mr-4 border-solid hover:border-red-100 border-transparent border-b-2">
+                <a href="#">MODE</a>
+            </li>
+            <li class="py-2 item-menu menu-beate px-2 mr-4 border-solid hover:border-red-100 border-transparent border-b-2">
+                <a href="#">BEAUTE</a>
+            </li>
+            <li class="py-2 item-menu px-2 mr-4 border-solid hover:border-red-100 border-transparent border-b-2">
+                <a href="#">LINGERIE</a>
+            </li>
+            <li class="py-2 item-menu menu-beate px-2 mr-4 border-solid hover:border-red-100 border-transparent border-b-2">
+                <a href="#">LINGE DE MAISON</a>
+            </li>
+            <li class="py-2 item-menu px-2 mr-4 border-solid hover:border-red-100 border-transparent border-b-2">
+                <a href="#">MEUBLE & DECO</a>
+            </li>
+            <li class="py-2 px-2 mr-4 bg-red-200 text-white">
+                <a class="uppercase" href="#">Offres spéciales</a>
+            </li>
+            <li class="py-2 item-egagements px-2 mr-4 border-solid hover:border-red-100 border-transparent border-b-2">
+                <a href="#">Engagements</a>
+            </li>
+        </ul>
+    </div>
+    <div class="absolute bg-white sub-menu w-full xl:px-48 sm:px-12 z-20 hidden">
+        <div class="content-sub-mode flex hidden">
+            <div class="w-3/5 mr-4">
+                <div class="py-2 font-black border-solid border-blue-100 border-b-2">
+                    <span>LA BEAUTÉ</span>
+                </div>
+                <div class="py-2 flex">
+                    <ul class="text-xs flex-1">
+                        <li class="py-1 text-sm font-black">
+                            <span>SOINS VISAGE</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Crème hydratante</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Contour des yeux</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Nettoyants</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Lotions</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Gommage et peeling</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Masques</span>
+                        </li>
+                    </ul>
+                    <ul class="text-xs flex-1">
+                        <li class="py-1 text-sm font-black">
+                            <span>SOINS VISAGE</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Crème hydratante</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Contour des yeux</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Nettoyants</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Lotions</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Gommage et peeling</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Masques</span>
+                        </li>
+                    </ul>
+                    <ul class="text-xs flex-1">
+                        <li class="py-1 text-sm font-black">
+                            <span>SOINS VISAGE</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Crème hydratante</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Contour des yeux</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Nettoyants</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Lotions</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Gommage et peeling</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Masques</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-1/5">
+                <div class="py-2 border-solid border-blue-100 border-b-2">
+                    <span>A LA UNE</span>
+                </div>
+                <div class="py-2 flex">
+                    <img src="public/img/3S-Menu-Beaute-2.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="content-sub-beaute flex hidden">
+            <div class="w-3/5 mr-4">
+                <div class="py-2 font-black border-solid border-blue-100 border-b-2">
+                    <span>LA BEAUTÉ</span>
+                </div>
+                <div class="py-2 flex">
+                    <ul class="text-xs flex-1">
+                        <li class="py-1 text-sm font-black">
+                            <span>SOINS VISAGE</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Crème hydratante</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Contour des yeux</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Nettoyants</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Lotions</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Gommage et peeling</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Masques</span>
+                        </li>
+                    </ul>
+                    <ul class="text-xs flex-1">
+                        <li class="py-1 text-sm font-black">
+                            <span>SOINS VISAGE</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Crème hydratante</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Contour des yeux</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Nettoyants</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Lotions</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Gommage et peeling</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Masques</span>
+                        </li>
+                    </ul>
+                    <ul class="text-xs flex-1">
+                        <li class="py-1 text-sm font-black">
+                            <span>SOINS VISAGE</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Crème hydratante</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Contour des yeux</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Nettoyants</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Lotions</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Gommage et peeling</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Masques</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-1/5">
+                <div class="py-2 font-black border-solid border-blue-100 border-b-2">
+                    <span>LA BEAUTÉ</span>
+                </div>
+                <div class="py-2 flex">
+                    <ul class="text-xs flex-1">
+                        <li class="py-1 text-sm font-black">
+                            <span>SOINS VISAGE</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Crème hydratante</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Contour des yeux</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Nettoyants</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Lotions</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Gommage et peeling</span>
+                        </li>
+                        <li class="py-1">
+                            <span>Masques</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-1/5">
+                <div class="py-2 border-solid border-blue-100 border-b-2">
+                    <span>A LA UNE</span>
+                </div>
+                <div class="py-2 flex">
+                    <img src="public/img/Inlisting-Menu-Levis2%20(2).jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden absolute text-sm text-center flex bg-white sub-engagement w-full xl:px-48 sm:px-12 z-20 ">
+        <div class="flex-1 py-8 px-4">
+            <img class="mb-4" src="public/img/Menu-3Simpact2.png">
+            <span class="uppercase">Programme de soutien</span>
+            <div>
+                <span>Je découvre </span>
+            </div>
+        </div>
+        <div class="flex-1 py-8 px-4">
+            <img class="mb-4" src="public/img/tout-changer-ensemble.jpg">
+            <span class="uppercase">Programme de soutien</span>
+            <div>
+                <span>Je découvre </span>
+            </div>
+        </div>
+        <div class="flex-1 py-8 px-4">
+            <img class="mb-4" src="public/img/le%20catalogue.jpg">
+            <span class="uppercase">Programme de soutien</span>
+            <div>
+                <span>Je découvre </span>
+            </div>
+        </div>
+        <div class="flex-1 py-8 px-4">
+            <img class="mb-4" src="public/img/nos-stylists.jpg">
+            <span class="uppercase">Programme de soutien</span>
+            <div>
+                <span>Je découvre </span>
+            </div>
+        </div>
+        <div class="flex-1 py-8 px-4">
+            <img class="mb-4" src="public/img/moins-mais-mieux.jpg">
+            <span class="uppercase">Programme de soutien</span>
+            <div>
+                <span>Je découvre </span>
+            </div>
+        </div>
+    </div>
+</header>
+<header class="md:block sm:block lg:hidden mobile-header font-montserrat h-24 border-solid border-b-2 border-pink-200">
+    <div class="px-4 flex relative">
+        <div>
+            <a>
+                <img class="show-menu w-6 py-4 mr-4" src="public/img/icon-bars.svg">
+            </a>
+        </div>
+        <div class="flex">
+                <span class="block">
+                    <img class="h-12" src="public/img/logo3s-mb.svg">
+                </span>
+            <ul class="flex py-3 absolute top-4 right-0 px-2">
+                <li class="mr-2">
+                    <p>
+                            <span class="block text-center">
+                                <a href="#" class="block w-6 py-1 h-8 flex justify-center">
+                                    <img src="public/img/syte-photo.svg">
+                                </a>
+                            </span>
+                    </p>
+                </li>
+                <li class="mr-2">
+                    <p>
+                            <span class="block text-center">
+                                <a href="#" class="block w-6 py-1 h-8 flex justify-center">
+                                    <img src="public/img/icon-search-nomad.png">
+                                </a>
+                            </span>
+                    </p>
+                </li>
+                <li class="mr-2">
+                    <p>
+                            <span class="block text-center">
+                                <a href="#" class="block w-6 py-1 h-8 flex justify-center">
+                                    <img src="public/img/icon-account-nomad.png">
+                                </a>
+                            </span>
+                    </p>
+                </li>
+                <li class="mr-2">
+                    <p>
+                            <span class="block text-center">
+                                <a href="#" class="block w-6 py-1 h-8 flex justify-center">
+                                    <img src="public/img/icon-cart-nomad.png">
+                                </a>
+                            </span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<span href="#"
+      class="mobile-menu font-montserrat hidden text-center absolute top-0 left-0 z-10 w-5/6 md:w-4/5 py-4 text-md bg-white border-solid border-b-2 border-pink-300">
+        <span class="hide-menu absolute px-4 py-4 top-0 left-0">X</span>
+        <span>MENU</span>
+    </span>
+<div class="hidden font-montserrat mobile-menu absolute top-0 left-0 mt-8 z-3 bg-white text-xs uppercase w-5/6 md:w-1/3">
+    <p class="h-8"></p>
+    <ul class="list-item-menu">
+        <li class="px-4 py-4 border-solid border-b-default border-r-default border-blue-100">
+            <i class="fa fa-user mr-4"></i>
+            <span>Mon compte</span>
+        </li>
+        <li class="px-4 py-4 border-solid border-b-default border-r-default border-blue-100">
+            <span>NOUVEAUTES</span>
+        </li>
+        <li class="px-4 py-4 border-solid border-b-default border-r-default border-blue-100 flex justify-between">
+            <span>MODE</span>
+            <i class="fa fa-chevron-right"></i>
+        </li>
+        <li class="px-4 py-4 border-solid border-b-default border-r-default border-blue-100">
+            <span>Mon compte</span>
+        </li>
+        <li class="px-4 py-4 border-solid border-b-default border-r-default border-blue-100">
+            <span>Mon compte</span>
+        </li>
+        <li class="px-4 py-4 border-solid border-b-default border-r-default border-blue-100">
+            <span>Mon compte</span>
+        </li>
+        <li class="px-4 py-4 border-solid border-b-default border-r-default border-blue-100">
+            <span>Mon compte</span>
+        </li>
+    </ul>
+</div>
+<div class="slider-content-text font-montserrat text-center sm:text-2xl md:text-sm py-4 bg-pink-100">
+    <a title="Recevez 10€ d’achat en vous inscrivant à notre newsletter"
+       href="https://www.3suisses.fr/NewsLetterSubscription.aspx" target="_blank" tabindex="-1">
+        Recevez 10€ d’achat en vous inscrivant à notre newsletter ! Je fonce &gt;
+    </a>
+    <a title="Journée des Femmes : -30% offerts sur une sélection et 100% des bénéfices reversés à la Fondation Lecordier qui vient en aide aux femmes les plus démunies partout en France. Code : WOMAN21 >"
+       href="https://www.3suisses.fr/journee-femme" tabindex="-1">
+        Journée des Femmes : -30% offerts sur une sélection et 100% des bénéfices reversés à la Fondation Lecordier qui
+        vient en aide aux femmes les plus démunies partout en France. Code : WOMAN21 &gt;
+    </a>
+</div>
+<!--    responsive-->
+<div class="py-4">
+    <img class="hidden md:block" src="public/img/HP-3S-Desk-PS-PAP-x1.jpg">
+    <img class="md:hidden" src="public/img/HP-3S-Mobile-PS-PAP.jpg">
+</div>
+<!--    responsive-->
+<div class="md:flex md:px-8">
+    <div class="py-4 md:w-3/6 block">
+        <img class="mr-3 hidden md:block" src="public/img/HP-3S-Desk-Secondaire-JDF.jpg">
+        <img class="md:hidden" src="public/img/HP-3S-Mobile-M&D-PostSoldes2.jpg">
+    </div>
+    <div class="py-4 md:w-3/6 block">
+        <img class="ml-4 hidden md:block" src="public/img/HP-3S-Desk-M&D-PostSoldes2.jpg">
+        <img class="md:hidden" src="public/img/HP-3S-Mobile-Secondaire-JDF.jpg">
+    </div>
+</div>
+<!--    responsive-->
+<!--    first slide-->
+<div class="nouveautes font-montserrat slick-first-owl bg-blue-200 py-8 relative">
+    <h2 class="text-center font-black text-xl text-blue-100 mt-8 mb-4">
+        Nos nouveautés :
+    </h2>
+    <span class="hidden z-20 top-50 ml-4 px-1 rounded-50 arrow-left-first-slide md:block absolute block w-10 bg-white left-0 top-0 px-4 py-4">
+            <img src="public/img/icon-arrow-left.png">
+    </span>
+    <span class="hidden z-20 top-50 mr-4 rounded-50 arrow-right-first-slide md:block absolute block w-10 bg-white right-0 top-0 px-4 py-4">
+            <img src="public/img/icon-arrow-right.png">
+    </span>
+    <div class="slick-first-slider pl-4">
+        <div class="border-0 hover:border-blue-100 hover:border-1 border-transparent border-solid mr-4">
+            <img src="public/img/combishort-saharienne-en-tencel-camelia-reedition_3201144_500x500.jpg">
+            <div class="bg-white px-4 py-4 text-sm">
+                    <span itemprop="name">
+                        Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                    </span>
+                <div class="py-2">
+                        <span>
+                            24,99 €
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="border-solid hover:border-blue-100 hover:border-1 border-transparent mr-4">
+            <img src="public/img/blouse-manches-longues-pipa-reedition_3201150_500x500.jpg">
+            <div class="bg-white px-4 py-4 text-sm">
+                    <span itemprop="name">
+                        Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                    </span>
+                <div class="py-2">
+                        <span>
+                            24,99 €
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="border-solid hover:border-blue-100 hover:border-1 border-transparent mr-4">
+            <img src="public/img/short-a-plis-alex-reedition_3201120_500x500.jpg">
+            <div class="bg-white px-4 py-4 text-sm">
+                    <span itemprop="name">
+                        Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                    </span>
+                <div class="py-2">
+                        <span>
+                            24,99 €
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="border-solid hover:border-blue-100 hover:border-1 border-transparent mr-4">
+            <img src="public/img/combishort-saharienne-en-tencel-camelia-reedition_3201144_500x500.jpg">
+            <div class="bg-white px-4 py-4 text-sm">
+                    <span itemprop="name">
+                        Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                    </span>
+                <div class="py-2">
+                        <span>
+                            24,99 €
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="border-solid hover:border-blue-100 hover:border-1 border-transparent mr-4">
+            <img src="public/img/chemise-longue-bennie-reedition_3201070_500x500.jpg">
+            <div class="bg-white px-4 py-4 text-sm">
+                    <span itemprop="name">
+                        Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                    </span>
+                <div class="py-2">
+                        <span>
+                            24,99 €
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="border-solid hover:border-blue-100 hover:border-1 border-transparent mr-4">
+            <img src="public/img/robe-longue-epaule-denudee-ninon-reedition_3201124_500x500.jpg">
+            <div class="bg-white px-4 py-4 text-sm">
+                    <span itemprop="name">
+                        Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                    </span>
+                <div class="py-2">
+                        <span>
+                            24,99 €
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="border-solid hover:border-blue-100 hover:border-1 border-transparent mr-4">
+            <img src="public/img/combishort-saharienne-en-tencel-camelia-reedition_3201144_500x500.jpg">
+            <div class="bg-white px-4 py-4 text-sm">
+                    <span itemprop="name">
+                        Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                    </span>
+                <div class="py-2">
+                        <span>
+                            24,99 €
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="border-solid hover:border-blue-100 hover:border-1 border-transparent mr-4">
+            <img src="public/img/chemise-sans-manche-dos-nu-charlie-reedition_3201146_500x500.jpg">
+            <div class="bg-white px-4 py-4 text-sm">
+                    <span itemprop="name">
+                        Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                    </span>
+                <div class="py-2">
+                        <span>
+                            24,99 €
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="border-solid hover:border-blue-100 hover:border-1 border-transparent mr-4">
+            <img src="public/img/short-a-plis-en-tencel-alexis-reedition_3201142_500x500.jpg">
+            <div class="bg-white px-4 py-4 text-sm">
+                    <span itemprop="name">
+                        Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                    </span>
+                <div class="py-2">
+                        <span>
+                            24,99 €
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="border-solid hover:border-blue-100 hover:border-1 border-transparent mr-4">
+            <img src="public/img/robe-portefeuille-en-tencel-valentina-reedition_3201138_500x500.jpg">
+            <div class="bg-white px-4 py-4 text-sm">
+                    <span itemprop="name">
+                        Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                    </span>
+                <div class="py-2">
+                        <span>
+                            24,99 €
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="border-solid hover:border-blue-100 hover:border-1 border-transparent mr-4">
+            <img src="public/img/robe-saharienne-camille-reedition_3201088_500x500.jpg">
+            <div class="bg-white px-4 py-4 text-sm">
+                    <span itemprop="name">
+                        Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                    </span>
+                <div class="py-2">
+                        <span>
+                            24,99 €
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--    second slide-->
+<div class="font-montserrat slick-first-owl py-8 relative">
+    <h2 class="text-center font-black text-xl text-blue-100 mt-8 mb-4">
+        Nos linges de maison :
+    </h2>
+    <span class="hidden md:block z-20 top-50 mr-4 rounded-50 arrow-second-right absolute block w-10 bg-white right-0 top-0 px-4 py-4">
+            <img src="public/img/icon-arrow-right.png">
+    </span>
+    <div class="block">
+        <div class="hidden md:block float-left mr-4 ml-4 w-1/6">
+            <img class="xl:w-5/6" src="public/img/encart-literie-60.jpg">
+        </div>
+        <div class="slick-second-slider">
+            <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
+                <img src="public/img/housse-de-couette-unie-polycoton-tertio-bleu-indigo_466477_500x500.jpg">
+                <div class="bg-white px-4 py-4 text-sm">
+                <span itemprop="name">
+                    Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                </span>
+                    <div class="py-2">
+                    <span>
+                        24,99 €
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
+                <img src="public/img/housse-de-couette-unie-polycoton-tertio-bleu-indigo_466477_500x500.jpg">
+                <div class="bg-white px-4 py-4 text-sm">
+                <span itemprop="name">
+                    Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                </span>
+                    <div class="py-2">
+                    <span>
+                        24,99 €
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
+                <img src="public/img/drap-housse-coton-victory--gris_1237593_500x500.jpg">
+                <div class="bg-white px-4 py-4 text-sm">
+                <span itemprop="name">
+                    Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                </span>
+                    <div class="py-2">
+                    <span>
+                        24,99 €
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
+                <img src="public/img/drap-housse-coton-victory--gris_1237593_500x500.jpg">
+                <div class="bg-white px-4 py-4 text-sm">
+                <span itemprop="name">
+                    Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                </span>
+                    <div class="py-2">
+                    <span>
+                        24,99 €
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
+                <img src="public/img/housse-de-couette-coton-tertio-gris-perle_466589_500x500.jpg">
+                <div class="bg-white px-4 py-4 text-sm">
+                <span itemprop="name">
+                    Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                </span>
+                    <div class="py-2">
+                    <span>
+                        24,99 €
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
+                <img src="public/img/housse-de-couette-coton-tertio-gris-perle_466589_500x500.jpg">
+                <div class="bg-white px-4 py-4 text-sm">
+                <span itemprop="name">
+                    Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                </span>
+                    <div class="py-2">
+                    <span>
+                        24,99 €
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
+                <img src="public/img/housse-de-couette-unie-polycoton-tertio-bleu-indigo_466477_500x500.jpg">
+                <div class="bg-white px-4 py-4 text-sm">
+                <span itemprop="name">
+                    Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                </span>
+                    <div class="py-2">
+                    <span>
+                        24,99 €
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
+                <img src="public/img/housse-de-couette-coton-deco-peche_1237623_500x500.jpg">
+                <div class="bg-white px-4 py-4 text-sm">
+                <span itemprop="name">
+                    Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                </span>
+                    <div class="py-2">
+                    <span>
+                        24,99 €
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
+                <img src="public/img/drap-housse-coton-victory--gris_1237593_500x500.jpg">
+                <div class="bg-white px-4 py-4 text-sm">
+                <span itemprop="name">
+                    Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                </span>
+                    <div class="py-2">
+                    <span>
+                        24,99 €
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
+                <img src="public/img/housse-de-couette-coton-tertio-gris-perle_466589_500x500.jpg">
+                <div class="bg-white px-4 py-4 text-sm">
+                <span itemprop="name">
+                    Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                </span>
+                    <div class="py-2">
+                    <span>
+                        24,99 €
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
+                <img src="public/img/housse-de-couette-unie-polycoton-tertio-bleu-indigo_466477_500x500%20(1).jpg">
+                <div class="bg-white px-4 py-4 text-sm">
+                <span itemprop="name">
+                    Short à plis en tencel Alexis Réédition - 3S. x Réédition
+                </span>
+                    <div class="py-2">
+                    <span>
+                        24,99 €
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--    block-->
+
+<div class="bg-font-home-insta font-montserrat bg-cover py-8">
+    <h2 class="text-center font-black text-xl text-blue-100 mb-4">
+        La mode est à vou :
+    </h2>
+    <p class="text-center px-2 py-2">
+        Vous souhaitez partager votre look ou votre intérieur ?<br>
+        Partagez vos photos sur Instagram avec #3suisses ou @3suisses
+    </p>
+    <div class="px-4 lg:flex lg:px-48">
+        <div class="flex">
+            <div class="flex-1 px-4 py-4">
+                <img src="public/img/123357272_847214742684350_2076318520657103240_n.jpg">
+            </div>
+            <div class="flex-1 px-4 py-4">
+                <img src="public/img/125210510_1009395602861742_5509525528685248368_n.jpg">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="flex-1 px-4 py-4">
+                <img src="public/img/121408909_694111121205248_2623627967499121773_n.jpg">
+            </div>
+            <div class="flex-1 px-4 py-4">
+                <img src="public/img/125245482_1017429708735955_1679883807561766061_n.jpg">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="flex-1 px-4 py-4">
+                <img src="public/img/125189698_131547231733755_2995361414482506537_n.jpg">
+            </div>
+            <div class="flex-1 px-4 py-4">
+                <img src="public/img/122722716_356261562379713_1700161631526921854_n.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-4">
+        <a class="px-4 w-full py-4 mt-8 bg-blue-100 text-white" href="#">Suivez-nous sur Instagram !</a>
+    </div>
+</div>
+
+<!--    block2-->
+
+<!--    footet-->
+
+<!-- nouveau -->
+<div class="block max-w-full font-montserrat md:max-w-1600 mx-auto">
+    <div class="block px-6 mb-6">
+        <h2 class="text-3xl font-black font-serif pin md:text-4xl text-center">Le nouveau 3 Suisses <span
+                class="text-red-200">:</span>
+        </h2>
+    </div>
+    <div class="block w-full px-6">
+        <ul class="w-full flex slick-nouveau-slider">
+            <li class="block px-2 w-full">
+                <div class="p-4 md:p-12 bg-blue-200 text-center">
+                    <span class="mb-8 block text-sm md:text-xl uppercase font-bold font-montserrat text-blue-100 leading-4 md:leading-6">Tout changer<br> ensemble</span>
+                    <img class="w-full" src="https://www.3suisses.fr/images/3suisses/refonte/home/push-home-1_02.jpg"
+                         alt="Tout changer ensemble"
+                         data-src="https://www.3suisses.fr/images/3suisses/refonte/home/push-home-1_02.jpg">
+                    <span class="mx-auto relative text-center block text-center -top-25 w-50 h-50 leading-50 bg-white border-default border-solid rounded-full border-red-100">
+                        <img class="inline-block" src="https://www.3suisses.fr/images/3suisses/refonte/icon-plus.png">
+                    </span>
+                    <span class="font-bold relative text-xs md:text-sm font-montserrat leading-4 -top-10">Je passe<br> en coulisse</span>
+                </div>
+            </li>
+            <li class="block px-2 w-full">
+                <div class="p-4 md:p-12 bg-gray-1100 text-center">
+                    <span class="mb-8 block text-sm md:text-xl uppercase font-bold font-montserrat text-blue-100 leading-4 md:leading-6">Tout changer<br> ensemble</span>
+                    <img class="w-full" src="https://www.3suisses.fr/media/3suisses/push-home-responsable.jpg"
+                         alt="Tout changer ensemble">
+                    <span class="mx-auto relative text-center block text-center -top-25 w-50 h-50 leading-50 bg-white border-default border-solid rounded-full border-red-100">
+                        <img class="inline-block" src="https://www.3suisses.fr/images/3suisses/refonte/icon-plus.png">
+                    </span>
+                    <span class="font-bold relative text-xs md:text-sm font-montserrat leading-4 -top-10">J'achète<br> mieux !</span>
+                </div>
+            </li>
+            <li class="block px-2 w-full">
+                <div class="p-4 md:p-12 bg-red-50 text-center">
+                    <span class="mb-8 block text-sm md:text-xl uppercase font-bold font-montserrat text-blue-100 leading-4 md:leading-6">Automne – Hiver <br> 2020</span>
+                    <img class="w-full" src="https://www.3suisses.fr/images/3suisses/refonte/home/push-home-3_04.jpg"
+                         alt="Tout changer ensemble"
+                    >
+                    <span class="mx-auto relative text-center block text-center -top-25 w-50 h-50 leading-50 bg-white border-default border-solid rounded-full border-red-100">
+                        <img class="inline-block" src="https://www.3suisses.fr/images/3suisses/refonte/icon-plus.png">
+                    </span>
+                    <span class="font-bold relative text-xs md:text-sm font-montserrat leading-4 -top-10">Vite<br> je feuillette</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end nouveau-->
+
+<footer class="py-8 font-montserrat">
+    <div class="bg-home-new bg-cover py-8 px-8 text-center">
+        <div class="bg-white py-8 px-8 text-2xl md:flex">
+            <div id="footer-news-livraison" class="md:flex-1 md:border-b-0 md:border-r-default border-solid sm:border-b-default border-blue-100 pb-12">
+                <p class="h2 py-4 md:text-xl uppercase font-bold font-montserrat text-blue-100 leading-4 md:leading-6">
+                    livraison et retour gratuit *
+                </p>
+                <span class="text-sm py-4">dès 59 € d'achat*</span>
+                <span class="py-4 flex justify-center">
+                <img class="py-4 text-center" src="public/img/icon-livraison.svg">
+            </span>
+                <span class="py-2 px-2 border-solid border-blue-100 border-default">
+                <a href="#" class="btn md:text-lg font-bold font-montserrat text-blue-100">Découvrir comment</a>
+            </span>
+            </div>
+            <div class=" md:flex-1 border-solid md:border-b-0 border-b-default border-blue-100 pb-12">
+                <p class="h2 py-4 md:text-xl uppercase font-bold font-montserrat text-blue-100 leading-4 md:leading-6">
+                    Recevez 10€ de bons d'achats
+                </p>
+                <span class="text-sm py-4"> en vous inscrivant à notre newsletter</span>
+                <p>
+                <span class="py-2 px-2">
+                    <a href="#" class="btn font-montserrat md:text-lg">Découvrir comment</a>
+                </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content flex">
+        <div class="lg:text-sm lg:flex-1 px-16 text-center text-xs">
+            <div>
+                <h2 class="font-black text-2xl py-6">
+                    Mode &amp; déco | 3 SUISSES
+                </h2>
+
+                <div class="seo__content">
+                    <p>
+                        <strong>3 SUISSES, c’est le meilleur de la mode et de la déco à portée de clic&nbsp;! </strong>
+                    </p>
+                    <p>Depuis 1932, nous mettons notre savoir-faire, notre créativité et notre passion à votre service.
+                        Inspirant et précurseur, 3 SUISSES est intiment liée à l’histoire de la mode et à la vôtre&nbsp;!</p>
+                    <p>Du catalogue posé sur la table du salon au digital, nous vous proposons des gammes de <a
+                            href="https://www.3suisses.fr/C-6220358-vetements-femme.htm" target="_blank">vêtements&nbsp;femme</a>,
+                        homme, et enfant, de la <a href="https://www.3suisses.fr/C-2943894-soutiens_gorge.htm"
+                                                   target="_blank">lingerie</a>, sans oublier du linge de maison et de
+                        la décoration. Chez 3 SUISSES, il y en a pour toute la famille&nbsp;! Shoppez les tendances du
+                        moment ou craquez pour notre ligne de basiques à prix choux ! Emparez-vous de nos inspirations
+                        déco et découvrez notre sélection de meubles design.&nbsp;</p>
+                    <p>Toujours à la pointe de la mode&nbsp;? Envie d’un nouveau look ? Avec notre collection de
+                        vêtements, de chaussures et d’accessoires, il y en a pour tous les goûts et pour tous les styles&nbsp;!
+                        Classique, rétro, causal ou bohème chic… Fondez pour nos coups de cœur, succombez à vos envies
+                        et composez une tenue à votre image.</p>
+                    <p>Fan de décoration&nbsp;? Scandinave, chic ou vintage&nbsp;? Pour le salon, le bureau ou la
+                        chambre&nbsp;? Retrouvez notre sélection de meubles, d’<a
+                                href="https://www.3suisses.fr/C-5183261-decoration-d%27interieur.htm" target="_blank">objets
+                            déco</a> et de <a href="https://www.3suisses.fr/C-2938775-nouveautes.htm" target="_blank">linge
+                            de maison</a> terriblement inspirante&nbsp;et réalisez VOTRE intérieur idéal&nbsp;!&nbsp;
+                    </p>
+                    <p>Chez 3 SUISSES, vous effectuez vos achats en ligne simplement, en toute sécurité et vous
+                        bénéficiez, tout au long de l’année, de nos bonnes affaires et de nos articles déco et <a
+                                href="https://www.3suisses.fr/C-6627547-toutes-les-promos"
+                                title="Vêtement en promotion " target="_blank">vêtements en&nbsp;promotion</a>. Ce n’est
+                        pas tout&nbsp;! Nous vous offrons même la livraison et le retour.&nbsp; Alors, c’est qui le
+                        chouchou&nbsp;?</p></div>
+            </div>
+        </div>
+        <div class="hidden lg:block flex-1">
+            <img src="public/img/989A0156.jpg">
+        </div>
+    </div>
+    <div class="list-icon flex justify-center py-8 mt-8 text-center">
+        <img class="px-3" src="public/img/icon-facebook.svg">
+        <img class="px-3" src="public/img/icon-instagram.svg">
+        <img class="px-3" src="public/img/icon-twitter.svg">
+        <img class="px-3" src="public/img/icon-pinterest.svg">
+        <img class="px-3" src="public/img/icon-youtube.svg">
+    </div>
+    <div class="list-services lg:flex lg:text-xs uppercase">
+        <div class="px-4 py-4 bg-blue-200 flex lg:flex-1 lg:justify-center">
+            <img class="mr-4 lg:w-10" src="public/img/icon-payment.svg">
+            <span class="pt-2">Paiement 100% Sécurisé</span>
+        </div>
+        <div class="px-4 py-4 bg-gray-950 flex lg:flex-1 lg:justify-center">
+            <img class="mr-4 lg:w-10" src="public/img/icon-truck-2.svg">
+            <span class="pt-2">Livraison offerte dès 59 </span>
+        </div>
+        <div class="px-4 py-4 bg-gray-1000 flex lg:flex-1 lg:justify-center">
+            <img class="mr-4 lg:w-10" src="public/img/icon-smiley.svg">
+            <span class="pt-2">Retour gratuit*</span>
+        </div>
+        <div class="px-4 py-4 bg-gray-1100 flex lg:flex-1 lg:justify-center">
+            <img class="mr-4 lg:w-10" src="public/img/leaf-50x50-2.png">
+            <span class="pt-2">Acheter mieux</span>
+        </div>
+    </div>
+    <!--    footer nav-->
+    <nav id="footer__nav" class="hidden lg:block">
+        <div class="nav py-2 px-8">
+            <div class="flex w-full text-sm">
+                <div class="flex-1">
+                    <p class="h6 py-8">Commande &amp; livraison</p>
+                    <ul>
+                        <li class="py-1">
+                            <a href="https://www.3suisses.fr/account_commande_last.html">Suivi de commande</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="#">Modalités de retour</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/#">Livraison sur mesure</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="#">Commande depuis l’Outre-Mer</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="#">Code promotion</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex-1">
+                    <p class="h6 py-8">Aides &amp; services</p>
+                    <ul>
+                        <li class="py-1">
+                            <a href="/page/faq.html">Aide en ligne</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/catalogue.htm">Demande de catalogue</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/catalogue.htm">Consulter le catalogue en ligne</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="https://www.3suisses.fr/contact_adv.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="flex-1">
+                    <p class="h6 py-8">Paiements sécurisés</p>
+                    <ul>
+                        <li class="py-1">
+                            <a href="/page/paiement.html">Moyen de paiement</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/page/carte4e.html">Carte 4 étoiles</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/services/CGV.htm">Conditions générales de vente</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/page/mentions.html">Mentions légales</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex-1">
+                    <p class="h6 py-8">Nos conseils</p>
+                    <ul>
+                        <li class="py-1">
+                            <a href="/page/guidejeansfemme.html" class="link">Prêt à porter</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/shop/guidelingerie.htm" class="link">Lingerie</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/shop/guidecanape.htm">Canapé</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/shop/guideliterie.htm">Literie</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <p class="h6 py-8">Les coulisses</p>
+                    <ul>
+                        <li class="py-1">
+                            <a href="/page/qui-sommes-nous.html" class="link">Qui sommes-nous ?</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/services/presse.htm" class="link">Revue de presse</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/services/recrutement.htm">Recrutement</a>
+                        </li>
+
+                        <li class="py-1">
+                            <a href="/page/sitemap.html">Plan du site</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-gray-1100 py-8">
+        <a class="flex justify-center">
+            <img src="public/img/avis_verifies.png">
+
+            Avis Clients
+
+            <span class="footer-fianet__note">8.3</span>
+            /
+            <span class="footer-fianet__sur">10</span><br>
+
+        </a>
+    </div>
+</footer>
+</body>
+</html>
