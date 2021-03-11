@@ -139,17 +139,20 @@ $( document ).ready(function() {
     window.onscroll = function() {myFunction()};
 
     let header = document.getElementById("menu-desktop");
+    let headerMobile = document.getElementById("menu-mobile");
 
     let sticky = header.offsetTop;
 
     function myFunction() {
         if (window.pageYOffset > sticky) {
             header.classList.add("fixed");
+            headerMobile.classList.add("fixed");
             $(".top-menu").hide();
             $(".logo-desktop").hide();
             $(".logo-desktop-small").show();
         } else {
             header.classList.remove("fixed");
+            headerMobile.classList.remove("fixed");
             $(".top-menu").show();
             $(".logo-desktop-small").hide();
             $(".logo-desktop").show();
