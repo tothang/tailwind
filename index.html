@@ -16,13 +16,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body class="text-blue-100 font-serif antialiased leading-1">
+<!--    content-search-bar -->
+<div class="hidden content-search-bar absolute top-0 fixed w-full py-2 bg-white border-red-50 border-2 border-solid z-40 flex">
+    <span class="hidden px-10 py-10 lg:block">
+        <img class="w-5" src="public/img/icon-search-nomad.png">
+    </span>
+    <input type="text" class="search-input leading-50 w-full rounded-none border-blue-100 hover:border-default">
+    <span class="px-10 py-10 lg:hidden">
+        <img class="w-5" src="public/img/icon-search-nomad.png">
+    </span>
+</div>
+
 <header class="hidden lg:block w-full bg-white z-40 font-montserrat" id="menu-desktop">
-    <div class="hidden content-search-bar absolute top-0 fixed w-full py-2 bg-white border-red-50 border-2 border-solid z-40 flex">
-        <span class="px-10 py-10">
-            <img class="w-5" src="public/img/icon-search-nomad.png">
-        </span>
-        <input type="text" class="search-input leading-50 w-full rounded-none border-blue-100 hover:border-default">
-    </div>
     <div class="block top-menu">
         <div class="px-12 py-1 flex justify-between bg-gray-850 text-xs font-light">
             <h1>3 SUISSES, une marque mode et déco française engagée !</h1>
@@ -397,7 +402,7 @@
                 </li>
                 <li class="mr-2">
                     <p>
-                            <span class="block text-center">
+                            <span class="block text-center mobile-search">
                                 <a href="#" class="block w-6 py-1 h-8 flex justify-center">
                                     <img src="public/img/icon-search-nomad.png">
                                 </a>
@@ -657,7 +662,7 @@
         <div class="hidden md:block float-left mr-4 ml-4 w-1/6">
             <img class="xl:w-5/6" src="public/img/encart-literie-60.jpg">
         </div>
-        <div class="slick-second-slider">
+        <div class="ml-4 xl:ml-0 slick-second-slider">
             <div class="border-solid hover:border-blue-100 border-transparent border-default mr-4">
                 <img src="public/img/housse-de-couette-unie-polycoton-tertio-bleu-indigo_466477_500x500.jpg">
                 <div class="bg-white px-4 py-4 text-sm">
@@ -902,8 +907,8 @@
 
 <footer class="py-8 font-montserrat">
     <div class="bg-home-new bg-cover py-8 px-8 text-center">
-        <div class="bg-white py-8 px-8 text-2xl md:flex">
-            <div id="footer-news-livraison" class="md:flex-1 md:border-b-0 md:border-r-default border-solid sm:border-b-default border-blue-100 pb-12">
+        <div class="bg-white py-8 px-8 text-sm xl:text-2xl md:flex">
+            <div id="footer-news-livraison" class="md:flex-1 md:border-b-0 md:border-r-default border-solid border-b-default border-blue-100 pb-12">
                 <p class="h2 py-4 md:text-xl uppercase font-bold font-montserrat text-blue-100 leading-4 md:leading-6">
                     livraison et retour gratuit *
                 </p>
