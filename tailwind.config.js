@@ -209,6 +209,7 @@ module.exports = {
             relaxed: '1.625',
             loose: '2',
             '50': '50px',
+            '20': '20px',
             '3': '.75rem',
             '4': '1rem',
             '5': '1.25rem',
