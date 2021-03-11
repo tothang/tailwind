@@ -146,13 +146,13 @@ $( document ).ready(function() {
         if (window.pageYOffset > sticky) {
             header.classList.add("fixed");
             $(".top-menu").hide();
-            $(".logo-desktop").hide('500');
-            $(".logo-desktop-small").show('2000');
+            $(".logo-desktop").hide();
+            $(".logo-desktop-small").show();
         } else {
             header.classList.remove("fixed");
             $(".top-menu").show();
-            $(".logo-desktop-small").hide('500');
-            $(".logo-desktop").show('2000');
+            $(".logo-desktop-small").hide();
+            $(".logo-desktop").show();
         }
     }
 
